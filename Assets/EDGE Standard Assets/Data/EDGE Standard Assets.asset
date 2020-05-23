@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3945b6dfb96f07945af0df3d8587a8a4, type: 3}
+  m_Name: EDGE Standard Assets
+  m_EditorClassIdentifier: 
+  Url: https://www.productiveedge.com/virtual-reality
+  Logo: {fileID: 0}
+  Latest: {fileID: 11400000, guid: 550921406b0945d4f960a8eaa7233974, type: 2}
