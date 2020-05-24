@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
      [Tooltip("In ms^-1")] [SerializeField] float xSpeed = 30f;
     // speed variable  METERS PER SECONDS
     [Tooltip("In m")] [SerializeField] float xRange = 20f;
+    [Tooltip("In m")] [SerializeField] float yRange = 12f;
     void Start()
     {
         
@@ -30,7 +31,12 @@ public class Player : MonoBehaviour
         transform.localPosition = new Vector3(clampedXpos, transform.localPosition.y, transform.localPosition.z);
 
 
-
+        float yThrow = CrossPlatformInputManager.GetAxis("Vertical");
+        //print(yThrow);
+        float yoffset = yThrow * xSpeed * Time.deltaTime;
+        float newYPos = transform.localPosition.y + yoffset;
+        float clampedYpos = Mathf.Clamp(newYPos, -yRange, yRange);
+        transform.localPosition = new Vector3( transform.localPosition.x, clampedYpos, transform.localPosition.z);
 
     }
 }
