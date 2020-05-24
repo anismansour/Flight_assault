@@ -3,7 +3,7 @@
     <Files>
       <File FileName="Assets/musicPlayer.cs" Line="8" Column="21" IsPinned="True" />
       <File FileName="Assets/Waypoint.cs" />
-      <File FileName="Assets/Standard Assets/Utility/WaypointCircuit.cs" Line="11" Column="18" />
+      <File FileName="Assets/Standard Assets/Utility/WaypointCircuit.cs" Line="241" Column="1" />
       <File FileName="Assets/Player.cs" Line="1" Column="1" />
     </Files>
     <Pads>
