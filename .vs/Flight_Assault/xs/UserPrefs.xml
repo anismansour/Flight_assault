@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{6F66E443-EB41-EC2E-3238-B86046413493}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Player.cs">
     <Files>
-      <File FileName="Assets/musicPlayer.cs" Line="8" Column="21" IsPinned="True" />
+      <File FileName="Assets/musicPlayer.cs" Line="4" Column="1" IsPinned="True" />
       <File FileName="Assets/Waypoint.cs" />
-      <File FileName="Assets/Standard Assets/Utility/WaypointCircuit.cs" Line="241" Column="1" />
-      <File FileName="Assets/Player.cs" Line="1" Column="1" />
+      <File FileName="Assets/Standard Assets/Utility/WaypointCircuit.cs" />
+      <File FileName="Assets/Player.cs" Line="12" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,16 +19,11 @@
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="Flight_Assault" expanded="True" selected="True" />
-        </State>
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8551a242-8d69-4e76-8903-840645b7d552" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f6002924-417f-4c57-98c3-5566a7261eee" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

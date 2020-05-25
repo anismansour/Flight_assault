@@ -289,6 +289,7 @@ MonoBehaviour:
   xSpeed: 30
   xRange: 20
   yRange: 12
+  RotationXFactor: -2
 --- !u!1 &616113486
 GameObject:
   m_ObjectHideFlags: 0
