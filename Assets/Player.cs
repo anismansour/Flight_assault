@@ -11,7 +11,10 @@ public class Player : MonoBehaviour
     [Tooltip("In m")] [SerializeField] float yRange = 12f;
     [SerializeField] float RotationXFactor = -2f; //rotate the ship using factor *position
     //"each position multiplied by the factor will give the needed rotation
-    [SerializeField] float controlFront = -5f; //factor that will controll the noise of the ship when moved up and down 
+    [SerializeField] float controlFrontX = -5f; //factor that will controll the noise of the ship when moved up and down 
+    [SerializeField] float RotationYFactor = 2f;
+    [SerializeField] float controlFrontY = -20f;
+
 
     float xThrow, yThrow; // moved them outside of movex and y () to be able to use them on rotation for moving noise of the ship
     void Start()
@@ -29,12 +32,23 @@ public class Player : MonoBehaviour
     }
     private void Rotation()
     {
+
+        // FRONT OF THE SHIP UP AND DOWN MOVEMENT X
         float NewRotationX = transform.localPosition.y * RotationXFactor;
-        float ControlNoisePos = yThrow * controlFront; //will controll the noise of the ship
+        float ControlNoisePos = yThrow * controlFrontX; //will controll the noise of the ship
         float PosRotationX = NewRotationX + ControlNoisePos;
-        float PosRotationY = 0f;
-        float PosRotationZ = 0f;
+        // FRONT OF THE SHIP WHEN MOVED LEFT AND RIGHT Y
+
+        float PosRotationY = transform.localPosition.x * RotationYFactor; ;
+        float PosRotationZ = xThrow * controlFrontY;
         transform.localRotation = Quaternion.Euler(PosRotationX, PosRotationY, PosRotationZ);
+
+       
+
+
+
+
+
 
     }
 

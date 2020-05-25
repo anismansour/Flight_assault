@@ -290,6 +290,9 @@ MonoBehaviour:
   xRange: 20
   yRange: 12
   RotationXFactor: -2
+  controlFrontX: -5
+  RotationYFactor: 2
+  controlFrontY: -20
 --- !u!1 &616113486
 GameObject:
   m_ObjectHideFlags: 0
