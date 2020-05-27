@@ -63,10 +63,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CollisionHandler.cs" />
     <Compile Include="Assets\EDGE Standard Assets\Demos\Version Stamp on Menu\SwitchVersionStyle.cs" />
     <Compile Include="Assets\EDGE Standard Assets\Scripts\UiTextVersion.cs" />
     <Compile Include="Assets\EDGE Standard Assets\Scripts\Version\Product.cs" />
     <Compile Include="Assets\EDGE Standard Assets\Scripts\Version\Version.cs" />
+    <Compile Include="Assets\Enemy.cs" />
     <Compile Include="Assets\Player.cs" />
     <Compile Include="Assets\StarSparrow\Readme\Readme Files\Scripts\ReadmeStarSparrow.cs" />
     <Compile Include="Assets\Terrainify2D\Scripts\Camera\SimpleCameraMovement.cs" />

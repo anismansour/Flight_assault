@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
+
+
+
 public class Player : MonoBehaviour
 {
 
@@ -18,24 +21,37 @@ public class Player : MonoBehaviour
 
 
     float xThrow, yThrow, zThrow; // moved them outside of movex and y () to be able to use them on rotation for moving noise of the ship
+    bool stopController = true;
+
     void Start()
     {
-        
+       
+
+
     }
+   
 
     // Update is called once per frame
     void Update()
     {
-       MoveX();
-        MoveY();
-       //woopa();
-        Rotation();
-        
-       
+        if (stopController)
+        {
+            MoveX();
+            MoveY();
+            //woopa();
+            Rotation();
+
+        }
 
     }
 
-   
+    void OnDeath()
+    {
+        //print("GAME OVER working from collision script !!!!");
+        stopController = false;
+    }
+
+
     private void Rotation()
     {
 
@@ -79,6 +95,7 @@ public class Player : MonoBehaviour
         transform.localPosition = new Vector3(transform.localPosition.x, clampedYpos, transform.localPosition.z);
     }
 
+    // todo fix 360 not working right when using rotate MoveY()
     private void woopa()
         //360 
     {
